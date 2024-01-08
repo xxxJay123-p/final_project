@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+.title{
+    display: inline-block;
+    position:absolute;
+    margin-top: 30%;
+    margin-left: 20%;
+    font-size: 2vw;
+    background-color: rgba(250, 250, 250, 0.7);
+}
+
+.top-address{
+    overflow:hidden;
+    height: 2vh;
+}
+
+body{
+    background-color: rgb(234, 234, 234);
+}
+
+.header {
+    margin-top: 1.5vh;
+    margin-right:0;
+    overflow:hidden;
+    padding:5px;
+    width:100%;
+    background-color:rgb(203, 203, 203);
+    align-items: center;
+}
+
+.header-right .active{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    border-radius:10%;
+}
+
+.header a.name {
+    position: relative;
+    left: 2vh;
+    top: 5vh;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom:10%;
+}
+
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-right{
+    padding-top: 2.5%;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+    float:right;
+}
+
+.header-right a{
+    padding: 10px;
+    margin: 10px;
+}
+
+.header-right a:hover{
+    background-color:rgba(100, 100, 100, 0.8);
+    color:rgb(255, 255, 255);
+    border-radius: 10%;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr  1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+img, picture{
+    display:block;
+    max-width:100%;
+}
+
+.container img{
+    margin: 5px;
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.item-1{
+    grid-column-start: -1;
+    grid-column-end: 1
+}
+
+.footer{
+    margin-top:75px;
+    padding: 50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    background-color:rgb(203, 203, 203);
+}
+
+
+.social_media{
+    grid-column-start:5;
+    grid-column-end:8;
+}
+
+/* Social Media Icons*/
+.social_media .icons .icons1, .icons2, .icons3, .icons4{
+    display:inline;
+}
+
+
+.ourTerribleWork{
+    margin-left:5px;
+}
+@media screen and (max-width: 600px) {
+
+}
