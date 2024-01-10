@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    background-color: rgb(98, 68, 56);
+}
+
+.header, .footer{
+    background-color: rgba(35, 32, 32, 0.4);
+    border-radius:3%;
+}
+
+h1, h2, h3, p, a{
+    text-decoration:none;
+    color:white;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    border-radius:2%;
+}
+
+/*this is useless*/
+
+/*
+div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*end of useless*/
+
+/*Header Things*/
+.header {
+    margin-top: 1.5vh;
+    margin-right:0;
+    overflow:hidden;
+    padding:25px;
+    width:100%;
+    align-items: center;
+}
+
+.header a.name {
+    position: relative;
+    left: 2vh;
+    top: 5vh;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a {
+    float: left;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/*End of Header */
+
+/* Start of Navbar */
+.navbar__right{
+    padding-top: 2.5%;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+    float:right;
+}
+
+.navbar__right a{
+    padding:10px;
+
+    margin: 10px;
+}
+
+.navbar__right .active{
+    background-color:rgb(219, 154, 114);
+    color: white;
+    border-radius:10%;
+}
+
+.navbar__right a:hover{
+    background-color:rgba(60, 31, 17, 0.8);
+    color:rgb(255, 255, 255);
+    border-radius: 10%;
+}
+
+/* End of Navbar */
+
+
+/* Start of Footer */
+.footer{
+    display:grid;
+    margin-top:75px;
+    padding: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.footer .footer_social_media{
+    grid-column-start:5;
+    grid-column-end: 7;
+}
+
+/* Social Media Icons*/
+.footer .footer_social_media .icons .tiktokIcon, .facebookIcon, .youtubeIcon, .pinterestIcon{
+    display:inline;
+    margin-right:10px;
+}
+
+
+.footer p, .footer a{
+    color:rgb(234, 173, 98);
+}
+
+
+/*End of footer */
+
+/* " Responsive " */
+@media screen and (max-width: 600px) {
+    .header{
+        display:block;
+        margin:0;
+        padding:0;
+    }
+
+    .footer .footer_content{
+        display:none;
+    }
+
+    .footer{
+        display:block;
+    }
+
+
+}

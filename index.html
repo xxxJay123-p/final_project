@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+    <style>
+      /*image grid */
+      .container{
+        padding:25px;
+        display:grid;
+        grid-template-columns: 1fr 1fr  1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+      }
+
+      .container img{
+        margin: 5px;
+        max-height: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+      }
+      /* the largest picture (in here we spill coffee)*/
+      .grid-1{
+        grid-column-start: -1;
+        grid-column-end: 1
+      }
+
+      .ourTerribleWork{
+        margin-left:5px;
+      }
+
+      /*in here we spill coffee*/
+      .title{
+          position:absolute;
+          margin-top: 35%;
+          margin-left: 50%;
+          font-size: 3vw;
+          border-radius:2%;
+      }
+
+      .title .text{
+        color:rgb(255, 255, 255);
+        text-shadow:black 5px 5px 10px;
+      }
+
+      .title p{
+        font-size:2vw;
+      }
+      /* Responsive image grid */
+
+      @media screen and (max-width: 600px) {
+        .container{
+          display:block;
+        }
+      }
+
+      /* ????? */
+    </style>
+  </head>
+
+  <body>
+    <!--empty space on top -->
+
+
+    <!--header-->
+    <div class="header">
+      <div class="navbar">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/coffeelogo.png" width="100px"></a>
+                <a href="index.html" class="name">Birdman</a>
+            </div>
+
+          <div class="navbar__right">
+            <a class="active" href="#index.html">Home</a>
+            <!--Click and go down to footer-->
+            <a href="menu.html">Menu</a>
+            <!---->
+            <a onclick="toFooter()">Contact</a>
+            <a href="aboutus.html">About Us</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--End of Header-->
+
+
+    <div class="container">
+      <div class="grid-1">
+        <div class="title">
+          <h2 class="text">We spill coffee.</h2>
+          <p class="text">See for yourself</p>
+        </div>
+        <img src="images/coffee.png">
+      </div>
+      <div class="grid-2">
+        <h3 class="ourTerribleWork">Our terrible work:</h3>
+      </div>
+      <div class="empty_grid">
+      </div>
+      <div class="empty_grid">
+      </div>
+      <div class="empty_grid">
+      </div>
+      <div class="grid-3">
+        <img src="images/broken_coffee.jpeg" class="picture" />
+      </div>
+      <div class="grid-4">
+        <img src="images/skull_coffee.jpeg" class="picture" />
+      </div>
+      <div class="grid-5">
+        <img src="images/oldman_coffee.jpeg" class="picture" />
+      </div>
+      <div class="grid-6">
+        <img src="images/codFish.jpeg" class="picture" />
+      </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <!--Footer content disappears when viewport < 600px-->
+    <div class="footer" id="footer">
+      <div class="empty_grid">
+      </div>
+      <div class="footer_logo">
+        <a href="#"><img src="images/coffeelogo.png" width="150px"></a>
+      </div>
+      <div class="footer_aboutUs">
+        <h2>About Us</h2>
+        <div class="footer_content"><a href="#">Read More</a></div>
+      </div>
+      <div class="footer_address">
+        <h2>Addresses</h2>
+        <div class="footer_content">
+          <p>Academia House (Block S), 15 Tsing Chung Koon Rd, Tuen Mun</p>
+        </div>
+      </div>
+      <div class="footer_phoneNumber">
+        <h2>Telephone</h2>
+        <div class="footer_content">
+          <p>+852 2380 0000</p>
+          <p>+852 2456 7111</p>
+        </div>
+      </div>
+      <div class="footer_aboutUs2">
+        <h2>About Us</h2>
+        <div class="footer_content">
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="1">
+        <h2>About Us</h2>
+        <div class="footer_content">
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="empty_grid">
+      </div>
+      <div class="empty_grid">
+      </div>
+      <div class="footer_useless">
+        <h2>Useless</h2>
+        <div class="footer_content">
+          <p>I can't lift a rock.</p>
+        </div>
+      </div>
+      <div class="footer_comeFindUs">
+        <h2>Feel free to come and find us!</h2>
+        <div class="footer_content">
+          <p>We have nothing to offer.</p>
+        </div>
+      </div>
+      <div class="footer_social_media">
+        <h2>Social Media</h2>
+        <div class="footer_content">
+          <div class="icons">
+            <a href="https://www.tiktok.com/about"><img src="images/tiktokLogo.png" height="50px" width="auto" class="tiktokIcon"></a>
+            <a href="https://www.facebook.com"><img src="images/facebookLogo.png" height="50px" width="auto" class="facebookIcon"></a>
+            <a href="https://www.youtube.com"><img src="images/youtubeLogo.png" height="50px" width="auto" class="youtubeIcon"></a>
+            <a href="https://www.pinterest.com"><img src="images/pinterest.png" height="50px" width="auto" class="pinterestIcon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--End of Footer-->
+  </body>
+</html>

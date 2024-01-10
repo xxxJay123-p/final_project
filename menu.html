@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+    <style>
+        /*image grid */
+        .menu{
+        display:grid;
+        padding:25px;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 0.2fr;
+        gap: 25px;
+        }
+    
+        .menu .text{
+        display: inline-block;
+        text-align: center;
+        }
+
+        .menu .button{
+          background-color:rgb(41, 41, 41);
+          padding:2px;
+          border-radius:5%;
+        }
+
+        .menu a{
+          color:white;
+          text-decoration: none;
+        }
+        /* ????? */
+    </style>
+  </head>
+
+  <body>
+    <!--empty space on top -->
+
+
+    <!--header-->
+    <div class="header">
+      <div class="navbar">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/coffeelogo.png" width="100px"></a>
+                <a href="index.html" class="name">Birdman</a>
+            </div>
+
+          <div class="navbar__right">
+            <a href="index.html">Home</a>
+            <!--Click and go down to footer-->
+            <a class="active" href="menu.html">Menu</a>
+            <!---->
+            <a onclick="toFooter()">Contact</a>
+            <a  href="aboutus.html">About Us</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--End of Header-->
+
+
+    <!--Menu section-->
+    <!--Empty grids just for filling up space in the grid-->
+    <div class="menu">
+        <div class="empty_grid"></div>
+        <div class="menu_item1">
+        <img src="images/skull_coffee.jpeg">
+        <div class="text">
+            <h3 class="menu_title">Bad coffee 01</h3>
+            <p class="menu_description">Coffee made with little to no effort</p>
+            <h3 class="menu_price">$89 USD</h3>
+            <a class="button" href="payment.html">Add to cart</a>
+        </div>
+        </div>
+        <div class="menu_item2">
+        <img src="images/skull_coffee.jpeg">
+        <div class="text">
+            <h3 class="menu_title">bad coffee 02</h3>
+            <p class="menu_description">Coffee made with little to no effort</p>
+            <h3 class="menu_price">$89</h3>
+            <a class="button" href="payment.html">Add to cart</a>
+        </div>
+        </div>
+
+        <div class="menu_item3">
+        <img src="images/skull_coffee.jpeg">
+        <div class="text">
+            <h3 class="menu_title">bad coffee 03</h3>
+            <p class="menu_description">Coffee made with little to no effort</p>
+            <h3 class="menu_price">$89</h3>
+            <a class="button" href="payment.html">Add to cart</a>
+        </div>
+        </div>
+        <div class="empty_grid"></div>
+        <div class="empty_grid"></div>
+        <div class="menu_item1">
+        <img src="images/skull_coffee.jpeg">
+        <div class="text">
+            <h3 class="menu_title">bad coffee 04</h3>
+            <p class="menu_description">Coffee made with little to no effort</p>
+            <h3 class="menu_price">$89</h3>
+            <a class="button" href="payment.html">Add to cart</a>
+        </div>
+        </div>
+
+        <div class="menu_item2">
+        <img src="images/skull_coffee.jpeg">
+        <div class="text">
+            <h3 class="menu_title">bad coffee 05</h3>
+            <p class="menu_description">Coffee made with little to no effort</p>
+            <h3 class="menu_price">$89</h3>
+            <a class="button" href="payment.html">Add to cart</a>
+        </div>
+        </div>
+
+        <div class="menu_item3">
+        <img src="images/skull_coffee.jpeg">
+        <div class="text">
+            <h3 class="menu_title">bad coffee 06</h3>
+            <p class="menu_description">Coffee made with little to no effort</p>
+            <h3 class="menu_price">$89</h3>
+            <a class="button" href="payment.html">Add to cart</a>
+        </div>
+        </div>
+    </div>
+    <!--End Of Menu section-->
+
+
+
+    <!--Footer-->
+    <!--Footer content disappears when viewport < 600px-->
+    <div class="footer" id="footer">
+      <div class="empty_grid">
+      </div>
+      <div class="footer_logo">
+        <a href="#"><img src="images/coffeelogo.png" width="150px"></a>
+      </div>
+      <div class="footer_aboutUs">
+        <h2>About Us</h2>
+        <div class="footer_content"><a href="#">Read More</a></div>
+      </div>
+      <div class="footer_address">
+        <h2>Addresses</h2>
+        <div class="footer_content">
+          <p>Academia House (Block S), 15 Tsing Chung Koon Rd, Tuen Mun</p>
+        </div>
+      </div>
+      <div class="footer_phoneNumber">
+        <h2>Telephone</h2>
+        <div class="footer_content">
+          <p>+852 2380 0000</p>
+          <p>+852 2456 7111</p>
+        </div>
+      </div>
+      <div class="footer_aboutUs2">
+        <h2>About Us</h2>
+        <div class="footer_content">
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="1">
+        <h2>About Us</h2>
+        <div class="footer_content">
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="empty_grid">
+      </div>
+      <div class="empty_grid">
+      </div>
+      <div class="footer_useless">
+        <h2>Useless</h2>
+        <div class="footer_content">
+          <p>I can't lift a rock.</p>
+        </div>
+      </div>
+      <div class="footer_comeFindUs">
+        <h2>Feel free to come and find us!</h2>
+        <div class="footer_content">
+          <p>We have nothing to offer.</p>
+        </div>
+      </div>
+      <div class="footer_social_media">
+        <h2>Social Media</h2>
+        <div class="footer_content">
+          <div class="icons">
+            <a href="https://www.tiktok.com/about"><img src="images/tiktokLogo.png" height="50px" width="auto" class="tiktokIcon"></a>
+            <a href="https://www.facebook.com"><img src="images/facebookLogo.png" height="50px" width="auto" class="facebookIcon"></a>
+            <a href="https://www.youtube.com"><img src="images/youtubeLogo.png" height="50px" width="auto" class="youtubeIcon"></a>
+            <a href="https://www.pinterest.com"><img src="images/pinterest.png" height="50px" width="auto" class="pinterestIcon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--End of Footer-->
+  </body>
+</html>
