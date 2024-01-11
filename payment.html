@@ -11,54 +11,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
     <style>
+        input{
+          all:unset;
+          background-color:rgb(47, 47, 47);
+          margin:5px;
+          padding: 5px;
+          border-radius:3px;
+          width: 275px;
+          height: 5vh;
+        }
+
         .payment{
-            background-color:rgba(231, 170, 124, 0.5);
-            margin-top:25px;
-            margin-left:5%;
-            margin-right:5%;
-            padding:25px;
+          background-color:rgba(127, 60, 27, 0.3);
+          margin-top:25px;
+          margin-left:5%;
+          margin-right:5%;
+          padding:25px;
+          border-radius:3px;
         }
         .payment_grid{
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin:auto;
-            font-size: 2vh;
-        }
-        input{
-            all:unset;
+          display:grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          margin:auto;
+          font-size: 2vh;
         }
 
-        .payment .payment_title .title, payment_confirm{
-            text-align:center;
+        .payment .payment_title .title, .payment_confirm{
+          text-align:center;
         }
 
-        .payment_grid label{
-            color:white;
+        .payment .payment_title span {
+          color:rgb(240, 156, 53);
         }
 
-        .payment_grid input{
-            background-color:white;
-            margin:5px;
-            border-radius:7%;
+        ::placeholder, #expDate{
+          color:rgb(128, 128, 128);
         }
 
+        #name, #address, #email, #cardNumber, #cvc, #expMonth, #expYear{
+          color:white;
+        }
+
+        /* Payment expiry date things */
+        .payment_grid .payment_expiryDate{
+          grid-column-start:1;
+          grid-column-end:2;
+        }
+        .payment_grid .payment_expiryDate input{
+          width: 100px;
+          height: 5vh;
+        }
+        .payment_expiryMonth, .payment_expiryYear{
+          display:inline-grid;
+        }
+        /*end of payment expiry date things */
+
+        /*Accepted payment methods */
         .payment_acceptedMethods{
-            grid-column-start: 1;
-            grid-column-end: 4;
+          grid-column-start: 1;
+          grid-column-end: 4;
         }
-
         .payment_acceptedMethods img{
-            display:inline;
+          display:inline;
+          margin-right:10px;
         }
+        /* end of accepted payment methods */
 
+        /* payment confirm button*/
         .payment_confirm{
-            grid-column-start:1;
-            grid-column-end: 4;
-            background-color: rgb(246, 179, 91);
-            padding: 15px;
-            text-align:center;
+          grid-column-start:2;
+          grid-column-end: 4;
+          cursor:pointer;
         }
 
+        .payment_confirm a{
+          background-color: rgb(246, 179, 91);
+          padding: 15px;
+          padding-left:25vw;
+          padding-right:25vw;
+        }
+        /* responsive*/
         @media screen and (max-width: 1150px) {
             .payment_grid{
                 display:block;
@@ -81,12 +113,14 @@
             </div>
 
           <div class="navbar__right">
-            <a class="active" href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <!--Click and go down to footer-->
             <a href="menu.html">Menu</a>
             <!---->
-            <a onclick="toFooter()">Contact</a>
+            <a href="#footer">Contact</a>
+            <a href="products.html">Products</a>
             <a href="aboutus.html">About Us</a>
+            <a href="course.html">Course</a>
           </div>
         </nav>
       </div>
@@ -98,47 +132,58 @@
     <div class="payment">
         <div class="payment_title">
             <h1 class="title">Checkout</h1>
-            <p class="title">Enter the following information</p>
-            <p class="title">Please choose any of the following payment methods</p>
+            <p class="title"><span>Enter the following information</span></p>
+            <p class="title"><span>Please choose any of the following payment methods</span></p>
         </div>
         <!--Checkout Grid-->
         <div class="payment_grid">
             <div class="payment_acceptedMethods">
+                <h2>Accepted Payment Methods</h2>
                 <img src="images/visaLogo.png" height="50px" max-width="100%">
                 <img src="images/mastercardLogo.png" height="36px" max-width="100%">
                 <img src="images/applePay.png" height="36" max-width="100%">
             </div>
+            <div class="empty_grid"></div>
             <div class="payment_grid_name">
-                <label for="name">Full Name:</label>
+                <label for="name"><h3>Full Name:</h3></label>
                 <input type="text" id="name" name="name" placeholder="Ben Deen"><br><br>
             </div>
 
             <div class="payment_grid_address">
-                <label for="address">Address:</label>
+                <label for="address"><h3>Address:</h3></label>
                 <input type="text" id="address" name="address" placeholder="7060 PO Box"><br><br>
             </div>
 
             <div class="payment_grid_email">
-                <label for="email">Email:</label>
+                <label for="email"><h3>Email:</h3></label>
                 <input type="text" id="email" name="email" placeholder="gasstation@gmail.com"><br><br>
             </div>
-
+            <div class="empty_grid"></div>
             <div class="payment_cardNumber">
-                <label for="cardNumber">Card Number:</label>
+                <label for="cardNumber"><h3>Card Number:</h3></label>
                 <input type="text" id="cardNumber" name="cardNumber" placeholder="6600-4423-6941-3951"><br><br>
             </div>
 
-            <div class="payment_expirationDate">
-                <label for="expDate">Expiration Date:</label>
-                <input type="date" id="expDate" name="expDate" placeholder="2025-10-31"><br><br>
+            <div class="payment_expiryDate">
+              <div class="payment_expiryMonth">
+                <label for="expDate"><h3> Month:</h3></label>
+                <input type="text" id="expMonth" name="expMonth" placeholder="September">
+              </div>
+
+              <div class="payment_expiryYear">
+                <label for="expDate"><h3>Year:</h3></label>
+                <input type="number" id="expYear" name="expYear" placeholder="2025">
+              </div>
+                
             </div>
 
             <div class="payment_cardCVV">
-                <label for="expDate">CVC/CVV:</label>
-                <input type="number" id="expDate" name="expDate" placeholder="451"><br><br>
+                <label for="expDate"><h3>CVC/CVV:</h3></label>
+                <input type="number" id="cvc" name="expDate" placeholder="451"><br><br>
             </div>
-            <div class="payment_confirm">
-                <a href="#payment_successful.html">Confirm</a>
+            <div class="payment_confirm" >
+                <a href=payment_successful.html>Confirm</a>
+                <span class="payment_confirm_button"></span>
             </div>
         </div>
     </div>  
@@ -201,10 +246,12 @@
         <h2>Social Media</h2>
         <div class="footer_content">
           <div class="icons">
+            <!--
             <a href="https://www.tiktok.com/about"><img src="images/tiktokLogo.png" height="50px" width="auto" class="tiktokIcon"></a>
             <a href="https://www.facebook.com"><img src="images/facebookLogo.png" height="50px" width="auto" class="facebookIcon"></a>
             <a href="https://www.youtube.com"><img src="images/youtubeLogo.png" height="50px" width="auto" class="youtubeIcon"></a>
             <a href="https://www.pinterest.com"><img src="images/pinterest.png" height="50px" width="auto" class="pinterestIcon"></a>
+          -->
           </div>
         </div>
       </div>

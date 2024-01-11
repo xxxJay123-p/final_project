@@ -12,19 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
     <style>
         /*image grid */
-        .menu{
+        .product{
         display:grid;
         padding:25px;
         grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
         gap: 25px;
         }
     
-        .menu .text{
-        display: inline-block;
+        .product .text{
         text-align: center;
+        align-items: center;
+        margin-left:15%;
+        margin-right:15%;
         }
 
-        .menu a{
+        .product a{
           color:white;
           text-decoration: none;
           background-color:rgb(41, 41, 41);
@@ -33,15 +35,11 @@
         }
 
         @media screen and (max-width: 650px) {
-            .menu{
-                display:grid;
-                grid-template-columns: 1fr;
-                grid-template-rows:auto;
-                margin-left:25%;
-                margin-right:25;
+            .product{
+                display:block;
             }
 
-            .menu .text{
+            .product .text{
                 justify-content: center;
             }
         }
@@ -65,10 +63,10 @@
           <div class="navbar__right">
             <a href="index.html">Home</a>
             <!--Click and go down to footer-->
-            <a class="active" href="menu.html">Menu</a>
+            <a href="menu.html">Menu</a>
             <!---->
             <a href="#footer">Contact</a>
-            <a href="products.html">Products</a>
+            <a class="active" href="products.html">Products</a>
             <a href="aboutus.html">About Us</a>
             <a href="course.html">Course</a>
           </div>
@@ -81,64 +79,64 @@
 
     <!--Menu section-->
     <!--Empty grids just for filling up space in the grid-->
-    <div class="menu">
+    <div class="product">
         <div class="empty_grid"></div>
-        <div class="menu_item1">
-        <img src="images/skull_coffee.jpeg">
+        <div class="product_item1">
+        <img src="images/terribleCoffeeBeans.webp">
         <div class="text">
-            <h3 class="menu_title">Bad coffee 01</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89 USD</h3>
+            <h3 class="product_title">Expired Coffee Beans 01</h3>
+            <p class="product_description">Terrible Coffee Beans</p>
+            <h3 class="product_price">$29 USD</h3>
             <a class="button" href="payment.html">Add to cart</a>
         </div>
         </div>
-        <div class="menu_item2">
-        <img src="images/skull_coffee.jpeg">
+        <div class="product_item2">
+        <img src="images/terribleCoffeeBeans.webp">
         <div class="text">
-            <h3 class="menu_title">bad coffee 02</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
+            <h3 class="product_title">Expired Coffee Beans 02</h3>
+            <p class="product_description">Terrible Coffee Beans</p>
+            <h3 class="product_price">$29</h3>
             <a class="button" href="payment.html">Add to cart</a>
         </div>
         </div>
 
-        <div class="menu_item3">
-        <img src="images/skull_coffee.jpeg">
+        <div class="product_item3">
+        <img src="images/terribleCoffeeBeans.webp">
         <div class="text">
-            <h3 class="menu_title">bad coffee 03</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
+            <h3 class="product_title">Expired Coffee Beans 03</h3>
+            <p class="product_description">Terrible Coffee Beans</p>
+            <h3 class="product_price">$29</h3>
             <a class="button" href="payment.html">Add to cart</a>
         </div>
         </div>
         <div class="empty_grid"></div>
         <div class="empty_grid"></div>
-        <div class="menu_item1">
-        <img src="images/skull_coffee.jpeg">
+        <div class="product_item1">
+        <img src="images/terribleCoffeeBeans.webp">
         <div class="text">
-            <h3 class="menu_title">bad coffee 04</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
+            <h3 class="product_title">Expired Coffee Beans 04</h3>
+            <p class="product_description">Terrible Coffee Beans</p>
+            <h3 class="product_price">$29</h3>
             <a class="button" href="payment.html">Add to cart</a>
         </div>
         </div>
 
-        <div class="menu_item2">
-        <img src="images/skull_coffee.jpeg">
+        <div class="product_item2">
+        <img src="images/terribleCoffeeBeans.webp">
         <div class="text">
-            <h3 class="menu_title">bad coffee 05</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
+            <h3 class="product_title">Expired Coffee Beans 05</h3>
+            <p class="product_description">Terrible Coffee Beans</p>
+            <h3 class="product_price">$29</h3>
             <a class="button" href="payment.html">Add to cart</a>
         </div>
         </div>
 
-        <div class="menu_item3">
-        <img src="images/skull_coffee.jpeg">
+        <div class="product_item3">
+        <img src="images/terribleCoffeeBeans.webp">
         <div class="text">
-            <h3 class="menu_title">bad coffee 06</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
+            <h3 class="product_title">Expired Coffee Beans 06</h3>
+            <p class="product_description">Terrible Coffee Beans</p>
+            <h3 class="product_price">$29</h3>
             <a class="button" href="payment.html">Add to cart</a>
         </div>
         </div>

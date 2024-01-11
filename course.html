@@ -11,41 +11,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
     <style>
-        /*image grid */
-        .menu{
-        display:grid;
-        padding:25px;
-        grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-        gap: 25px;
-        }
-    
-        .menu .text{
-        display: inline-block;
-        text-align: center;
-        }
-
-        .menu a{
-          color:white;
-          text-decoration: none;
-          background-color:rgb(41, 41, 41);
-          padding:2px;
-          border-radius:5%;
-        }
-
-        @media screen and (max-width: 650px) {
-            .menu{
-                display:grid;
-                grid-template-columns: 1fr;
-                grid-template-rows:auto;
-                margin-left:25%;
-                margin-right:25;
-            }
-
-            .menu .text{
-                justify-content: center;
-            }
+        /*course grid */
+        .course{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap: 25px;
+            text-align:center;
+            margin: 0 5% 0 5%;
         }
         /* ????? */
+
+        .course .course_title{
+            border-bottom: solid 2px white;
+            margin: 5px 0 0 50px;
+        }
+
+        /*Responsive course grid*/
+        @media screen and (max-width: 600px) {
+            .course{
+                display:block;
+            }
+        }
     </style>
   </head>
 
@@ -65,12 +51,12 @@
           <div class="navbar__right">
             <a href="index.html">Home</a>
             <!--Click and go down to footer-->
-            <a class="active" href="menu.html">Menu</a>
+            <a href="menu.html">Menu</a>
             <!---->
             <a href="#footer">Contact</a>
             <a href="products.html">Products</a>
             <a href="aboutus.html">About Us</a>
-            <a href="course.html">Course</a>
+            <a class="active" href="course.html">Course</a>
           </div>
         </nav>
       </div>
@@ -78,74 +64,31 @@
 
     <!--End of Header-->
 
-
-    <!--Menu section-->
-    <!--Empty grids just for filling up space in the grid-->
-    <div class="menu">
+    <div class="course">
         <div class="empty_grid"></div>
-        <div class="menu_item1">
-        <img src="images/skull_coffee.jpeg">
-        <div class="text">
-            <h3 class="menu_title">Bad coffee 01</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89 USD</h3>
-            <a class="button" href="payment.html">Add to cart</a>
-        </div>
-        </div>
-        <div class="menu_item2">
-        <img src="images/skull_coffee.jpeg">
-        <div class="text">
-            <h3 class="menu_title">bad coffee 02</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
-            <a class="button" href="payment.html">Add to cart</a>
-        </div>
-        </div>
-
-        <div class="menu_item3">
-        <img src="images/skull_coffee.jpeg">
-        <div class="text">
-            <h3 class="menu_title">bad coffee 03</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
-            <a class="button" href="payment.html">Add to cart</a>
-        </div>
+        <div class="course_grid">
+            <div class="course_title">
+                <h1>Our Courses</h1>
+                <p><i>professional scam victim</i></p>
+            </div>
         </div>
         <div class="empty_grid"></div>
-        <div class="empty_grid"></div>
-        <div class="menu_item1">
-        <img src="images/skull_coffee.jpeg">
-        <div class="text">
-            <h3 class="menu_title">bad coffee 04</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
-            <a class="button" href="payment.html">Add to cart</a>
+        <div class="course_01">
+            <img src="images/broken_coffee.jpeg">
+            <a><h2>Successful Coffee Man 01</h2></a>
+            <p>Cracked</p>
         </div>
+        <div class="course_02">
+            <img src="images/broken_coffee.jpeg">
+            <a><h2>Successful Coffee Man 02</h2></a>
+            <p>Broken</p>
         </div>
-
-        <div class="menu_item2">
-        <img src="images/skull_coffee.jpeg">
-        <div class="text">
-            <h3 class="menu_title">bad coffee 05</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
-            <a class="button" href="payment.html">Add to cart</a>
-        </div>
-        </div>
-
-        <div class="menu_item3">
-        <img src="images/skull_coffee.jpeg">
-        <div class="text">
-            <h3 class="menu_title">bad coffee 06</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89</h3>
-            <a class="button" href="payment.html">Add to cart</a>
-        </div>
+        <div class="course_03">
+            <img src="images/broken_coffee.jpeg">
+            <a><h2>Successful Coffee Man 03</h2></a>
+            <p>Fail</p>
         </div>
     </div>
-    <!--End Of Menu section-->
-
-
 
     <!--Footer-->
     <!--Footer content disappears when viewport < 600px-->
