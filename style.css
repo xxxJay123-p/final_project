@@ -59,7 +59,6 @@ img{
     padding-top: 2.5%;
     padding-left:10px;
     padding-right:10px;
-    padding: 2.5%  10%;
     text-align:center;
     float:right;
 }
@@ -114,19 +113,38 @@ img{
 /*End of footer */
 
 /* " Responsive " */
-@media screen and (max-width:1000px){
-    .navbar__right a{
+@media screen and (max-width:1008px){
+    .navbar__right{
         float:none;
         display:block;
-        padding:13px;
-        margin-top:1%;
-        text-align:left;
+        text-align:center;
+        margin-top:5%;
     }
+    .navbar__right a{
+        display:block;
+        float:none;
+        padding:13px;
+        margin-left:25%;
+        margin-right:25%;
+        text-align:center;
+    }
+}
 
+@media screen and (max-width: 640px) {
     .navbar__right{
-        float:left;
-        margin-top:25%;
-        margin-right:90%;
+        float:none;
+        display:block;
+        text-align:center;
+        margin-top:5%;
+        transform:translateY(50px);
+    }
+    .navbar__right a{
+        display:block;
+        float:none;
+        padding:20px;
+        margin-left:25%;
+        margin-right:25%;
+        text-align:center;
     }
 }
 
