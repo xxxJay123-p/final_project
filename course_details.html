@@ -12,24 +12,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
     <style>
         /*course grid */
-        .course{
+        .course_details_grid{
             display:grid;
             grid-template-columns:1fr 1fr 1fr;
             gap: 25px;
-            text-align:center;
             margin: 0 5% 0 5%;
         }
         /* ????? */
 
-        .course .course_title{
+        .course_details .course_title, .course_details_title_title,  .course_details_title p{
             border-bottom: solid 2px white;
-            margin: 5px 1vw 5px 1vw;
+            text-align:center;
+            margin: 0 5% 5px 5%;
         }
-        
+
+        /*
+        .course_details_grid *{
+            display:grid;
+            align-items:center;
+            justify-content: center;
+        }
+        */
+
+        .course_details_grid .course_picture{
+            grid-area: 1/1/3/3;
+            margin-top:5px;
+        }
+
+        .course_details_grid .confirm_order{
+            grid-area: 3/2/4/3;
+            text-align:center;
+            margin:7%;
+        }
+
+        .course_details_grid .confirm_order a{
+            background-color:rgb(198, 113, 60);
+            padding:25px 75px 25px 75px;
+        }
 
         /*Responsive course grid*/
-        @media screen and (max-width: 600px) {
-            .course{
+        @media screen and (max-width: 1000px) {
+            .course_details, .course_details_grid{
                 display:block;
             }
         }
@@ -65,32 +88,48 @@
 
     <!--End of Header-->
 
-    <div class="course">
-        <div class="empty_grid"></div>
-        <div class="course_grid">
-            <div class="course_title">
-                <h1>Our Courses</h1>
-                <p><i>professional scam victim</i></p>
+    <div class="course_details">
+        <div class="course_title">
+            <h1>Course Details</h1>
+            <p><i>A boy and a cow were grazing in the meadow, enjoying the warmth of the sun on their backs.</i></p>
+        </div>
+
+        <div class="course_details_grid">
+            <div class="course_picture">
+                <img src="images/madBarista.jpeg">
+            </div>
+            <div class="course_details_title">
+                <h2 class="course_details_title_title">The Disappointed Barista</h2>
+                <p>In a land where dreams and play entwine,<br>
+                    A boy with wonder, pure and fine.<br>
+                    His toy deer, crafted with care,<br>
+                    A world of joy they both would share.<br><br>
+                    
+                    Imagination danced in their play,<br>
+                    Underneath the sun's warm ray.<br>
+                    The boy, with laughter, filled the air,<br>
+                    As his toy deer became a friend so rare.<br><br>
+                    
+                    With every bite, a tale was spun,<br>
+                    Of adventures wild, under the golden sun.<br>
+                    The toy transformed with each sweet chew,<br>
+                    A magical journey only they knew.<br><br>
+                    
+                    Through fields of green and skies so blue,<br>
+                    The boy and toy, a bond that grew.<br>
+                    In a world of make-believe, so sincere,<br>
+                    The boy found joy in his toy deer.<br><br>
+                    
+                    No harm, no pain, just playful delight,<br>
+                    As day turned to dusk and then to night.<br>
+                    The boy and his toy, an everlasting pair,<br>
+                    In a world of dreams, beyond compare.</p>
+            </div>
+            <div class="confirm_order">
+                <a class="buttom" href="payment.html">Add to cart</a>
             </div>
         </div>
-        <div class="empty_grid"></div>
-        <div class="course_01">
-            <a href="course_details.html">
-                <img src="images/broken_coffee.jpeg">
-                <a><h2>Successful Coffee Man 01</h2></a>
-                <p>Cracked</p>
-            </a>
-        </div>
-        <div class="course_02">
-            <img src="images/broken_coffee.jpeg">
-            <a><h2>Successful Coffee Man 02</h2></a>
-            <p>Broken</p>
-        </div>
-        <div class="course_03">
-            <img src="images/broken_coffee.jpeg">
-            <a><h2>Successful Coffee Man 03</h2></a>
-            <p>Fail</p>
-        </div>
+        
     </div>
 
     <!--Footer-->
