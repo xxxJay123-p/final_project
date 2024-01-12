@@ -25,13 +25,6 @@ img{
     border-radius:2%;
 }
 
-/*this is useless*/
-
-/*
-div{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 /*end of useless*/
 
 /*Header Things*/
@@ -66,13 +59,13 @@ div{
     padding-top: 2.5%;
     padding-left:10px;
     padding-right:10px;
+    padding: 2.5%  10%;
     text-align:center;
     float:right;
 }
 
 .navbar__right a{
     padding:10px;
-
     margin: 10px;
 }
 
@@ -121,13 +114,23 @@ div{
 /*End of footer */
 
 /* " Responsive " */
-@media screen and (max-width: 600px) {
-    .header{
+@media screen and (max-width:1000px){
+    .navbar__right a{
+        float:none;
         display:block;
-        margin:0;
-        padding:0;
+        padding:13px;
+        margin-top:1%;
+        text-align:left;
     }
 
+    .navbar__right{
+        float:left;
+        margin-top:25%;
+        margin-right:90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .footer .footer_content{
         display:none;
     }
