@@ -33,24 +33,19 @@ img{
     margin-right:0;
     overflow:hidden;
     padding:25px;
-    width:100%;
-    align-items: center;
+    width:auto;
 }
 
-.header a.name {
-    position: relative;
-    left: 2vh;
-    top: 5vh;
+.navbar .logo .name{
+    transform:translateY(40px);
     font-size: 25px;
     font-weight: bold;
 }
 
-.header a {
-    float: left;
-    text-align: center;
-    color:white;
-    text-decoration: none;
-    font-size: 18px;
+.logo img, .logo a {
+    display:inline;
+    float:left;
+    clear:right;
 }
 /*End of Header */
 
@@ -64,6 +59,11 @@ img{
 }
 
 .navbar__right a{
+    float: left;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
     padding:10px;
     margin: 10px;
 }
@@ -71,13 +71,13 @@ img{
 .navbar__right .active{
     background-color:rgb(219, 154, 114);
     color: white;
-    border-radius:10%;
+    border-radius:3%;
 }
 
 .navbar__right a:hover{
     background-color:rgba(60, 31, 17, 0.8);
     color:rgb(255, 255, 255);
-    border-radius: 10%;
+    border-radius: 3%;
 }
 
 /* End of Navbar */
@@ -118,25 +118,7 @@ img{
         float:none;
         display:block;
         text-align:center;
-        margin-top:5%;
-    }
-    .navbar__right a{
-        display:block;
-        float:none;
-        padding:13px;
-        margin-left:25%;
-        margin-right:25%;
-        text-align:center;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .navbar__right{
-        float:none;
-        display:block;
-        text-align:center;
-        margin-top:5%;
-        transform:translateY(50px);
+        transform: translateY(100px);
     }
     .navbar__right a{
         display:block;
@@ -145,6 +127,19 @@ img{
         margin-left:25%;
         margin-right:25%;
         text-align:center;
+    }
+    
+    .header{
+        padding-bottom:100px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navbar__right{
+        float:none;
+        display:block;
+        text-align:center;
+        margin: 0;
     }
 }
 
