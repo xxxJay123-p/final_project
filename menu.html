@@ -23,25 +23,27 @@
           display:grid;
           align-items: center;
           justify-content: center;
-          padding:5px;
           border-radius: 3%;
+          margin-bottom:5px;
         }
         
         .menu a{
           color:white;
           text-decoration: none;
           background-color:rgb(41, 41, 41);
-          padding:2px;
+          padding:15px;
           border-radius:5%;
+        }
+
+        .menu img{
+          width:250px;
+          aspect-ratio: 1/1;
+          object-fit: cover;
         }
 
         @media screen and (max-width: 650px) {
             .menu{
-                display:grid;
-                grid-template-columns: 1fr;
-                grid-template-rows:auto;
-                margin-left:25%;
-                margin-right:25;
+              display:block;
             }
 
             .menu .text{
@@ -86,16 +88,16 @@
     <!--Empty grids just for filling up space in the grid-->
     <div class="menu">
         <div class="menu_item1">
-        <img src="images/skull_coffee.jpeg">
-          <div class="text">
-            <h3 class="menu_title">Bad coffee 01</h3>
-            <p class="menu_description">Coffee made with little to no effort</p>
-            <h3 class="menu_price">$89 USD</h3>
-            <a class="button" href="payment.html">Add to cart</a>
-          </div>
+          <img src="images/menuItem1.png">
+            <div class="text">
+              <h3 class="menu_title">Bad coffee 01</h3>
+              <p class="menu_description">Coffee made with little to no effort</p>
+              <h3 class="menu_price">$89 USD</h3>
+              <a class="button" href="payment.html">Add to cart</a>
+            </div>
         </div>
         <div class="menu_item2">
-          <img src="images/skull_coffee.jpeg">
+          <img src="images/menuItem2.jpeg">
           <div class="text">
               <h3 class="menu_title">Bad coffee 02</h3>
               <p class="menu_description">Coffee made with little to no effort</p>
@@ -105,7 +107,7 @@
         </div>
 
         <div class="menu_item3">
-          <img src="images/skull_coffee.jpeg">
+          <img src="images/menuItem3.jpeg">
           <div class="text">
             <h3 class="menu_title">Bad coffee 03</h3>
             <p class="menu_description">Coffee made with little to no effort</p>
@@ -115,7 +117,7 @@
         </div>
 
         <div class="menu_item4">
-          <img src="images/skull_coffee.jpeg">
+          <img src="images/menuItem4.jpeg">
           <div class="text">
             <h3 class="menu_title">Bad coffee 04</h3>
             <p class="menu_description">Coffee made with little to no effort</p>
@@ -125,7 +127,7 @@
         </div>
 
         <div class="menu_item5">
-          <img src="images/skull_coffee.jpeg">
+          <img src="images/menuItem5.jpeg">
           <div class="text">
             <h3 class="menu_title">Bad coffee 05</h3>
             <p class="menu_description">Coffee made with little to no effort</p>
@@ -135,7 +137,7 @@
         </div>
 
         <div class="menu_item6">
-          <img src="images/skull_coffee.jpeg">
+          <img src="images/menuItem6.jpeg">
             <div class="text">
               <h3 class="menu_title">Bad coffee 06</h3>
               <p class="menu_description">Coffee made with little to no effort</p>
