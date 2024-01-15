@@ -11,55 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
     <style>
-      /*image grid */
-      .container{
-        padding:25px;
-        display:grid;
-        grid-template-columns: 1fr 1fr  1fr 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
+      .background_image img{
+        border-radius:0;
+        width:100vw;
       }
-
-      .container img{
-        margin: 5px;
-        max-height: 100%;
-        min-height: 100%;
-        min-width: 100%;
-        max-width: 100%;
-        object-fit: cover;
-      }
-      /* the largest picture (in here we spill coffee)*/
-      .grid-1{
-        grid-column-start: -1;
-        grid-column-end: 1
-      }
-
-      /*in here we spill coffee*/
-      .title{
-          position:absolute;
-          margin-top: 35%;
-          margin-left: 50%;
-          font-size: 4vw;
-          border-radius:3vw;
-      }
-
-      .title .text{
-        color:rgb(255, 255, 255);
-        text-shadow:black 5px 5px 10px;
-      }
-
-      .title p{
-        font-size:3vw;
-      }
-      /* Responsive image grid */
-
-      @media screen and (max-width: 1000px) {
-        .container{
-          display:block;
-        }
-      }
-
-      /* ????? */
     </style>
   </head>
 
@@ -91,40 +46,10 @@
     </div>
     <!--End of Header-->
 
-
-    <div class="container">
-      <a href="#grid_1_img"><h1>Menu ⬇</h1></a>
-      <div class="grid-1">
-        <a href="menu.html">
-          <div class="title">
-            <h2 class="text">We spill coffee.</h2>
-            <p class="text">See for yourself</p>
-          </div>
-          <img src="images/coffee.png" id="grid_1_img">
-        </a>
-      </div>
-      <div class="grid-2">
-        <h1>Our terrible work:</h1>
-      </div>
-      <div class="empty_grid">
-      </div>
-      <div class="empty_grid">
-      </div>
-      <div class="empty_grid">
-      </div>
-      <div class="grid-3">
-        <img src="images/broken_coffee.jpeg" class="picture" />
-      </div>
-      <div class="grid-4">
-        <img src="images/skull_coffee.jpeg" class="picture" />
-      </div>
-      <div class="grid-5">
-        <img src="images/oldman_coffee.jpeg" class="picture" />
-      </div>
-      <div class="grid-6">
-        <img src="images/codFish.jpeg" class="picture" />
-      </div>
+    <div class="background_image">
+      <img src="images/coffee_background_image.png">
     </div>
+    
 
 
 
