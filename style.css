@@ -7,11 +7,12 @@
 
 body{
     background-color:rgb(171, 121, 67);
-    /*
+    /* old 
     background-color: rgb(98, 68, 56);*/
 }
 
 .header, .footer{
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 1), 0 -6px 20px 0 rgba(0, 0, 0, 1);
     background-color: rgba(35, 32, 32, 1);
     border-radius:3%;
 }
@@ -27,8 +28,6 @@ img{
     border-radius:2%;
 }
 
-/*end of useless*/
-
 /*Header Things*/
 .header {
     margin-top: 25px;
@@ -41,6 +40,7 @@ img{
     top:35px;
     font-size: 25px;
     font-weight: bold;
+    margin-right:5px;
 }
 
 .logo img, .logo a {
@@ -53,12 +53,10 @@ img{
 /* Start of Navbar */
 .navbar__right{
     float:right;
-    text-align:center;
-
 }
 
 .navbar__right a{
-    float: left;
+    display:inline-block;
     text-align: center;
     color:white;
     text-decoration: none;
@@ -67,15 +65,13 @@ img{
     transform: translate(-25px , 50%);
 }
 
-.navbar__right .active{
+.navbar__right .active, 
+.navbar__right a:hover
+{
     color:rgb(219, 154, 114);
     border-radius:3%;
 }
 
-.navbar__right a:hover{
-    color:rgb(219, 154, 114);
-    border-radius: 3%;
-}
 
 /* End of Navbar */
 
@@ -112,13 +108,16 @@ img{
 /* " Responsive " */
 @media screen and (max-width:1008px){
     .navbar__right{
-        position:absolute;
+        position:fixed;
+        right:50%;
+        transform: translateX(50%);
+        top:75px;
         float:clear;
+        position:relative;
         display:block;
         align-items:center;
         text-align:center;
         justify-content: center;
-        left:45vw;
     }
     .navbar__right a{
         transform:unset;
@@ -128,7 +127,7 @@ img{
         align-items:center;
     }
     .header{
-        padding-bottom:185px;
+        padding-bottom:100px;
     }
 
     .footer{
