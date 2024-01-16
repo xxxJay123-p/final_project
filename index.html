@@ -33,30 +33,65 @@
       }
 
       /*End of Background image*/
+
       .index_about_us{
         display:flex;
         margin-right:15%;
         margin-left:15%;
         margin-top:10px;
       }
-      .index_about_us h1{
+      .index_about_us h1, 
+      .customer_reviews h1
+      {
         display:inline-block;
         border-bottom:1px solid white;
       }
       .index_about_us .about_us_text{
         display:block;
       }
+
       .index_about_us img{
         width:300px;
         height:300px;
-        object-fit: cover;
+        aspect-ratio:1/1;
+        object-fit: fill;
         border-radius:50%;
         margin-right:15px;
-        border:5px solid white;
+        border:1px solid white;
+      }
+
+      .customer_reviews img{
+        width:100%;
+        aspect-ratio:1/1;
+        object-fit: fill;
+        border-radius:50%;
+        margin-right:15px;
+        border:1px solid white;
+      }
+
+      .customer_reviews{
+        display:block;
+        margin-left:15%;
+        margin-right:15%;
+      }
+      .customer_reviews_grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .customer_reviews_grid>*{
+        margin:25px;
+      }
+      .customer_reviews_title{
+        margin-bottom:5px;
       }
 
       @media screen and (max-width:1008px){
         .index_about_us{
+          display:block;
+          margin-top:50px;
+          margin-bottom:50px;
+        }
+        .customer_reviews_grid{
           display:block;
         }
       }
@@ -112,16 +147,25 @@
     </div>
 
     <div class="customer_reviews">
-      <div class="customer_reviews_text">
+      <div class="customer_reviews_title">
         <h1>Customer Reviews</h1>
-        <h3>Customer 1</h3>
-        <p>Thank you Ken for saving my life. I was stuck under a car. Ken has descended from the sky to save me. Without Ken I would've been dead. Once again, thank you very much, Ken.</p>
-
-        <h3>Customer 2</h3>
-        <p>Thank you Ken for saving my dog from a car crash. My dog would've died if you didn't help. You are the lord and savior.</p>
-
-        <h3>Customer 3</h3>
-        <p>The text is not important. This is a website homework.I write whatever I want. Don't complain.</p>
+      </div>
+      <div class="customer_reviews_grid">
+        <div class="customer_reviews_customer_1">
+          <img src="images/guy1.jpeg">
+          <h3>Customer 1</h3>
+          <p>Thank you Ken for saving my life. I was stuck under a car. Ken has descended from the sky to save me. Without Ken I would've been dead. Once again, thank you very much, Ken.</p>
+        </div>
+        <div class="customer_reviews_customer_2">
+          <img src="images/guy2.jpeg">
+          <h3>Customer 2</h3>
+          <p>Thank you Ken for saving my dog from a car crash. My dog would've died if you didn't help. You are the lord and savior.</p>
+        </div>
+        <div class="customer_reviews_customer_3">
+          <img src="images/guy3.jpeg">
+          <h3>Customer 3</h3>
+          <p>The text is not important. This is a website homework.I write whatever I want. Don't complain. For the one last time. I love goats.</p>
+        </div>
       </div>
     </div>
 
