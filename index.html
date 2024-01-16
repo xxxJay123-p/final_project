@@ -11,9 +11,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
     <style>
+
+      /*Background Image*/
       .background_image img{
         border-radius:0;
         width:100vw;
+        margin-top: 15px;
+      }
+
+      .background_image h2{
+        position:absolute;
+        top:50%;
+        left:10%;
+        font-size:40px;
+        padding:15px;
+        transition: 0.5s;
+      }
+
+      .background_image h2:hover{
+        color:rgb(219, 154, 114);
+      }
+
+      /*End of Background image*/
+      .index_about_us{
+        display:flex;
+        margin-right:15%;
+        margin-left:15%;
+        margin-top:10px;
+      }
+      .index_about_us h1{
+        display:inline-block;
+        border-bottom:1px solid white;
+      }
+      .index_about_us .about_us_text{
+        display:block;
+      }
+      .index_about_us img{
+        width:300px;
+        height:300px;
+        object-fit: cover;
+        border-radius:50%;
+        margin-right:15px;
+        border:5px solid white;
+      }
+
+      @media screen and (max-width:1008px){
+        .index_about_us{
+          display:block;
+        }
       }
     </style>
   </head>
@@ -33,10 +78,10 @@
 
           <div class="navbar__right">
             <a class="active" href="index.html">Home</a>
-            <!--Click and go down to footer-->
             <a href="menu.html">Menu</a>
-            <!---->
+            <!--Click and go to footer-->
             <a href="#footer">Contact</a>
+            <!---->
             <a href="products.html">Products</a>
             <a href="aboutus.html">About Us</a>
             <a href="course.html">Course</a>
@@ -47,11 +92,38 @@
     <!--End of Header-->
 
     <div class="background_image">
+      <a href="menu.html"><h2>Shop Now</h2></a>
       <img src="images/coffee_background_image.png">
     </div>
-    
 
+    <div class="index_about_us">
+      <img src="images/sleeper.webp">
+      <div class="index_about_us_text">
+        <h1>About Us</h1>
 
+        <p>Osterreich</p>
+        <p>The boy wakes up in a train. People are being recorded. The story ends with the boy falling asleep inside the train.</p>
+        <p>When I found out the piano stopped.</p>
+        <p>Tempest.</p>
+        <p>Korean mixed noodles on giraffe.</p>
+        <p>The days</p>
+        <p>Bad coffee shall be served until the end of time.</p>
+      </div>
+    </div>
+
+    <div class="customer_reviews">
+      <div class="customer_reviews_text">
+        <h1>Customer Reviews</h1>
+        <h3>Customer 1</h3>
+        <p>Thank you Ken for saving my life. I was stuck under a car. Ken has descended from the sky to save me. Without Ken I would've been dead. Once again, thank you very much, Ken.</p>
+
+        <h3>Customer 2</h3>
+        <p>Thank you Ken for saving my dog from a car crash. My dog would've died if you didn't help. You are the lord and savior.</p>
+
+        <h3>Customer 3</h3>
+        <p>The text is not important. This is a website homework.I write whatever I want. Don't complain.</p>
+      </div>
+    </div>
 
     <!--Footer-->
     <!--Footer content disappears when viewport < 600px-->
