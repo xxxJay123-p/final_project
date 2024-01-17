@@ -13,18 +13,34 @@
     <style>
 
       /*Background Image*/
+      /*
       .background_image img{
         border-radius:0;
         width:100vw;
         margin-top: 15px;
       }
 
+      */
+      .background_image{
+        margin-top:25px;
+        background-image:url(images/coffee_background_image.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        background-attachment:fixed;
+        object-fit:cover;
+        height:600px;
+      }
+
       .background_image h2{
-        position:relative;
-        font-size:40px;
-        padding:15px;
-        transition: 0.5s;
-        z-index:10;
+        color:rgb(232, 160, 116);
+        text-shadow: 0px 0px 10px black;
+        font-size:44px;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .background_image h2:hover{
@@ -128,7 +144,6 @@
 
     <div class="background_image">
       <a href="menu.html"><h2>Shop Now</h2></a>
-      <img src="images/coffee_background_image.png">
     </div>
 
     <div class="index_about_us">
