@@ -13,23 +13,19 @@
     <style>
 
       /*Background Image*/
-      .background_image{
-        margin-top:25px;
-        margin-bottom:25px;
-        background-image:url("images/coffee_background_image.png");
-        background-size:cover;
-        background-repeat: no-repeat;
-        height:100vh;
-        width:100vw
+      .background_image img{
+        border-radius:0;
+        width:100vw;
+        margin-top: 15px;
       }
 
-      .background_image_text{
+      .background_image h2{
+        position:absolute;
+        top:50%;
+        left:10%;
         font-size:40px;
+        padding:15px;
         transition: 0.5s;
-        display:flex;
-        position:relative;
-        top:15%;
-        left:5%;
       }
 
       .background_image h2:hover{
@@ -42,8 +38,7 @@
         display:flex;
         margin-right:15%;
         margin-left:15%;
-        margin-top:25px;
-        margin-bottom:25px;
+        margin-top:10px;
       }
       .index_about_us h1, 
       .customer_reviews h1
@@ -68,7 +63,7 @@
       .customer_reviews img{
         width:100%;
         aspect-ratio:1/1;
-        object-fit: cover;
+        object-fit: fill;
         border-radius:50%;
         margin-right:15px;
         border:1px solid white;
@@ -89,7 +84,7 @@
       .customer_reviews_title{
         margin-bottom:5px;
       }
-  
+
       @media screen and (max-width:1008px){
         .index_about_us{
           display:block;
@@ -100,7 +95,6 @@
           display:block;
         }
       }
-
     </style>
   </head>
 
@@ -133,9 +127,8 @@
     <!--End of Header-->
 
     <div class="background_image">
-      <div class="background_image_text">
-        <a href="menu.html"><h2>Shop Now</h2></a>
-      </div>
+      <a href="menu.html"><h2>Shop Now</h2></a>
+      <img src="images/coffee_background_image.png">
     </div>
 
     <div class="index_about_us">
