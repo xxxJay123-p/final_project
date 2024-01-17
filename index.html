@@ -20,12 +20,11 @@
       }
 
       .background_image h2{
-        position:absolute;
-        top:50%;
-        left:10%;
+        position:relative;
         font-size:40px;
         padding:15px;
         transition: 0.5s;
+        z-index:10;
       }
 
       .background_image h2:hover{
@@ -41,7 +40,8 @@
         margin-top:10px;
       }
       .index_about_us h1, 
-      .customer_reviews h1
+      .customer_reviews h1,
+      .customer_reviews h2
       {
         display:inline-block;
         border-bottom:1px solid white;
@@ -153,17 +153,17 @@
       <div class="customer_reviews_grid">
         <div class="customer_reviews_customer_1">
           <img src="images/guy1.jpeg">
-          <h3>Customer 1</h3>
+          <h2>Customer 1</h2>
           <p>Thank you Ken for saving my life. I was stuck under a car. Ken has descended from the sky to save me. Without Ken I would've been dead. Once again, thank you very much, Ken.</p>
         </div>
         <div class="customer_reviews_customer_2">
           <img src="images/guy2.jpeg">
-          <h3>Customer 2</h3>
+          <h2>Customer 2</h2>
           <p>Thank you Ken for saving my dog from a car crash. My dog would've died if you didn't help. You are the lord and savior.</p>
         </div>
         <div class="customer_reviews_customer_3">
           <img src="images/guy3.jpeg">
-          <h3>Customer 3</h3>
+          <h2>Customer 3</h2>
           <p>The text is not important. This is a website homework.I write whatever I want. Don't complain. For the one last time. I love goats.</p>
         </div>
       </div>
